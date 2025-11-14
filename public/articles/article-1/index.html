@@ -12,8 +12,9 @@
  
 
 
-      <title>My New Hugo Site - </title>
-<script type="application/ld+json">
+      <title>Article One - </title>
+
+  <meta name="description" content="Another programming article."><script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "WebSite",
@@ -49,7 +50,7 @@
         "position": 3,
         "item": {
           "@id": "http:\/\/localhost:1313\/articles\/article-1\/",
-          "name": ""
+          "name": "Article one"
         }
     }]
 }
@@ -60,10 +61,10 @@
   "author": {
     "name" : ""
   },
-  "headline": "",
-  "description" : "",
+  "headline": "Article One",
+  "description" : "Another programming article.",
   "inLanguage" : "en",
-  "wordCount":  0 ,
+  "wordCount":  271 ,
   "datePublished" : "0001-01-01T00:00:00\u002b00:00",
   "dateModified" : "0001-01-01T00:00:00\u002b00:00",
   "image" : "http:\/\/localhost:1313\/",
@@ -83,12 +84,14 @@
 </script>
 
 
-<meta property="og:title" content="My New Hugo Site" />
+<meta property="og:title" content="Article One" />
+<meta property="og:description" content="Another programming article.">
 <meta property="og:url" content="http://localhost:1313/articles/article-1/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="My New Hugo Site" />
 
-  <meta name="twitter:title" content="My New Hugo Site" />
+  <meta name="twitter:title" content="Article One" />
+  <meta name="twitter:description" content="Another programming article.">
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="generator" content="Hugo 0.151.2">
   <link rel="alternate" href="http://localhost:1313/index.xml" type="application/rss+xml" title="My New Hugo Site"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
@@ -212,7 +215,31 @@
 
 
 
-  <div class="intro-header"></div>
+  
+
+  <header class="header-section ">
+    
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="page-heading">
+              
+                <h1>Article One</h1>
+              
+              
+                <hr class="small">
+              
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </header>
 
 
     
@@ -220,7 +247,46 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        
+        <h2 id="article-one">Article One:</h2>
+<h2 id="introduction-to-the-problem">Introduction to the Problem</h2>
+<p>This homework problem is from chapter two. The problem asks to write a loop that makes seven calls to console.log to output the following triangle:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">##</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">###</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">####</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#####</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">######</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#######</span>
+</span></span></code></pre></div><h2 id="breaking-down-the-solution">Breaking Down the Solution</h2>
+<p>The first line of code to the solution creates a binding named &ldquo;triangle&rdquo; (let) and assigns the value of an empy string to it (&quot; &ldquo;).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">triangle</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+</span></span></code></pre></div><p>The second line of code creates a for loop. This for loop has three main parts:  initialization, check, and update.</p>
+<p>Initiation:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">triangle</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span></code></pre></div><p>This creates an inner binding (also named triangle). This new variabe is created inside the loop, and it starts out as the “#” symbol (a single character).</p>
+<p>Check:</p>
+<p>This code line decides whether the loop should keep going. The loop continues as long as the triangle string has 7 or fewer characters, while the &ldquo;triangle.length&rdquo; property tells how many characters are in the string (7).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">triangle</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">7</span>
+</span></span></code></pre></div><p>Update:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">triangle</span>)
+</span></span></code></pre></div><p>This code line prints the current triangle string.</p>
+<p>Then the loop updates:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">triangle</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;#&#34;</span>
+</span></span></code></pre></div><p>This code line adds one more &ldquo;#&rdquo; to the end of the triangle string.</p>
+<p>The code builds a triangle pattern by printing a string that gets one &ldquo;#&rdquo; longer each time the loop runs, up to seven times. while the last line prints the result to the console.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">triangle</span>)
+</span></span></code></pre></div><h2 id="full-solution">Full Solution</h2>
+<p>The full solution looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">triangle</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">triangle</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">triangle</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">7</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">triangle</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;#&#34;</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">triangle</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">triangle</span>)
+</span></span></code></pre></div><p>This solution was found through Chapter Two in Eloquent JavaScript by Homer White.</p>
+
 
         
 
@@ -230,15 +296,6 @@
       </article>
 
       
-        <ul class="pager blog-pager">
-          
-            <li class="previous">
-              <a href="http://localhost:1313/articles/articles-2/" data-toggle="tooltip" data-placement="top" title="">&larr; Previous Post</a>
-            </li>
-          
-          
-        </ul>
-      
 
 
       
@@ -247,7 +304,15 @@
   </div>
 </div>
 
-      <footer>
+      
+    <div class="page-meta">
+  
+  
+  
+</div>
+
+
+  <footer>
   <div class="container">
     
     <div class="row">

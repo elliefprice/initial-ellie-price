@@ -4,9 +4,6 @@ title = 'My New Hugo Site'
 theme = "beautifulhugo"
 
     
-[markup.goldmark.renderer]
-  unsafe = true
-
 [[menu.main]]
   identifier = "home"
   name = "Home"
@@ -29,3 +26,8 @@ theme = "beautifulhugo"
 
     
     
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
